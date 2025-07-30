@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from wcd.andeye.com/markdown-merge by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jul 2025 06:29:03 GMT -->
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha256-Md8eaeo67OiouuXAi8t/Xpd8t2+IaJezATVTWbZqSOw=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js" integrity="sha512-kaDP6dcDG3+X87m9SnhyJzwBMKrYnd2tLJjGdBrZ9yEL8Zcl2iJRsPwylLkbd2g3QC5S8efV3sgwI5r73U0HnA==" crossorigin="anonymous"></script>
+<style>
+#html-output div {
+margin-top: 5em;
+font-family:Helvetica!important;
+}
+#html-output p{
+font-size:12px!important;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<form>
+  <div class="form-group">
+<textarea class="form-control"  id="html-input">Hi ##Names## of ##Organisation##, go to [this link](https://##Subdomain##.andeye.com/cop26adaptation)</textarea>
+
+</div>
+  <div class="form-group">
+<textarea class="form-control"  id="csv-input">Organisation,Names,Subdomain
+andeye Events Co.,"Bill and Ben",isle
+the Institute of Fake Events,"Joel and Martin",demo</textarea>
+</div>
+<a href="#" class="btn btn-primary">Submit</a>
+</form>
+</div>
+<div id="html-output" class="container"></div>
+<script>
+$( document ).ready(function() {
+	$('.btn').click(function() {
+		generate()
+	});
+});
+function generate() {
+	let inputTemplate = $('#html-input').val();
+	let inputCsv = $.csv.toObjects($('#csv-input').val());
+	let headers = Object.keys(inputCsv[0]);
+	console.log(headers);
+	
+	$('#html-output').html("");
+	for (let i = 0; i < inputCsv.length; i++) {
+		console.log(inputCsv[i]);
+		let thisHtml = $('#html-input').val();
+		for (let j = 0; j < headers.length; ++j) {
+			thisHtml = thisHtml.replace(new RegExp('##' + headers[j] + '##', 'g'), inputCsv[i][headers[j]])
+		}
+		console.log(thisHtml);
+		let generatedHtml = markdown.toHTML(thisHtml);
+		let containedHtml = $('<div>').html(generatedHtml);
+		$('#html-output').append(containedHtml);
+	}
+}
+</script>
+</body>
+
+<!-- Mirrored from wcd.andeye.com/markdown-merge by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jul 2025 06:29:03 GMT -->
+</html><script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+			function setPageViewCookie(cname, cvalue) {
+				var d = new Date();
+				d.setTime(d.getTime() + 1800000);
+				var expires = "expires="+ d.toUTCString();
+				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+			}
+			function getPageViewCookie(cname) {
+				var name = cname + "=";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(';');
+				for(var i = 0; i <ca.length; i++) {
+				  var c = ca[i];
+				  while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				  }
+				  if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				  }
+				}
+				return "";
+			}
+
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open("GET.html", "/logpageview?rurl=" + window.location.href, true);
+			xmlHttp.send(null);
+		});
+</script>
+			<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+var xhttp = new XMLHttpRequest();
+var ts = 0;
+function logEventView() {
+	var domain = window.location.host;
+	var path = window.location.pathname;
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		   ts = xhttp.responseText;
+		   if (ts < 1) {
+			   clearInterval(logEventViewSetInterval);
+		   }
+		}
+	};
+	xhttp.open("GET.html", "/logeventview?domain=" + domain + "&path=" + path + "&ts=" + ts, true);
+	xhttp.send();
+}
+
+var logEventViewSetInterval = setInterval(function(){ logEventView(); }, 300000);
+logEventView();
+});
+</script>

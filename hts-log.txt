@@ -1,0 +1,42 @@
+HTTrack3.49-2 launched on Wed, 30 Jul 2025 07:26:55 at https://wcd.andeye.com/waterclimatediscussion https://wcd.andeye.com/residualchlorine https://wcd.andeye.com/wcd2022 https://wcd.andeye.com/markdown-merge https://wcd.andeye.com/wcd2024 https://wcd.andeye.com/wcd2021 https://wcd.andeye.com/mwht-platinum-sponsor https://wcd.andeye.com/actionpledges https://wcd.andeye.com/call-to-action-drafting https://wcd.andeye.com/videosubmissions https://wcd.andeye.com/wcd3-holding https://wcd.andeye.com/action-pledges https://wcd.andeye.com/call-to-action +*.andeye.com/*
+(httrack https://wcd.andeye.com/waterclimatediscussion https://wcd.andeye.com/residualchlorine https://wcd.andeye.com/wcd2022 https://wcd.andeye.com/markdown-merge https://wcd.andeye.com/wcd2024 https://wcd.andeye.com/wcd2021 https://wcd.andeye.com/mwht-platinum-sponsor https://wcd.andeye.com/actionpledges https://wcd.andeye.com/call-to-action-drafting https://wcd.andeye.com/videosubmissions https://wcd.andeye.com/wcd3-holding https://wcd.andeye.com/action-pledges https://wcd.andeye.com/call-to-action -O ./wcd_mirror -N %p/%n.%t +*.andeye.com/* -r99 -c8 -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+07:30:22	Error: 	"Not Found" (404) at link https://wcd.andeye.com/2044/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:30:22	Error: 	"Not Found" (404) at link https://wcd.andeye.com/2024/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:30:33	Error: 	"Not Found" (404) at link https://wcd.andeye.com/wcd2022/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:30:39	Error: 	"Not Found" (404) at link https://wcd.andeye.com/WaterClimateDiscussion.html (from https://wcd.andeye.com/waterclimatediscussion)
+07:30:39	Error: 	"Not Found" (404) at link https://wcd.andeye.com/WCD2022/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:32:06	Error: 	"Not Found" (404) at link https://wcd.andeye.com/call-to-action/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:33:25	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26finance/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:33:25	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26transport/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:33:25	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26energy/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:33:25	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26nature/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:33:25	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26adaptation/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+07:33:25	Error: 	"Not Found" (404) at link https://wcd.andeye.com/GET (from https://wcd.andeye.com/waterclimatediscussion)
+07:33:28	Warning: 	Moved Permanently for https://www.andeye.com/robots.txt
+07:33:28	Warning: 	Redirected link is identical because of 'URL Hack' option: https://www.andeye.com/robots.txt and https://andeye.com/robots.txt
+07:33:28	Warning: 	Warning moved treated for https://www.andeye.com/robots.txt (real one is https://andeye.com/robots.txt)
+07:33:28	Warning: 	Moved Permanently for https://www.andeye.com/terms/
+07:33:28	Warning: 	Redirected link is identical because of 'URL Hack' option: https://www.andeye.com/terms/ and https://andeye.com/terms/
+07:33:28	Warning: 	File has moved from https://www.andeye.com/terms/ to https://andeye.com/terms/
+07:33:42	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cdn-cgi/l/email-protection (from https://wcd.andeye.com/actionpledges)
+07:34:41	Error: 	"<none>" (522) at link https://interactive.andeye.com/recorder (from https://wcd.andeye.com/action-pledges)
+07:35:20	Error: 	"Not Found" (404) at link https://wcd.andeye.com/images/logo.svg (from https://wcd.andeye.com/css/main.css?mid=559)
+07:35:25	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link videoask-api-wsgi.prod.svc.cluster.local/robots.txt (from https://video.andeye.com/fad2jv7zb?fullscreen)
+07:35:25	Warning: 	Retry after error -5 (Unable to get server's address: nodename nor servname provided, or not known) at link videoask-api-wsgi.prod.svc.cluster.local/oembed?url=https%3A//video.andeye.com/fad2jv7zb&format=json (from https://video.andeye.com/fad2jv7zb?fullscreen)
+07:35:30	Error: 	"<none>" (522) at link https://interactive.andeye.com/sharedtree/61a62c20f2eff838962e7ffa (from https://wcd.andeye.com/wcd-next)
+07:35:30	Error: 	"<none>" (522) at link https://interactive.andeye.com/sharedtree/6170d09d80a6781baca9bf6b?branding=wcd (from https://wcd.andeye.com/water-climate-hierarchy)
+07:35:30	Error: 	"<none>" (522) at link https://interactive.andeye.com/sharedtree/619cc903f2eff838962e7ff5?branding=wcd (from https://wcd.andeye.com/water-climate-next)
+07:35:30	Error: 	"<none>" (522) at link https://interactive.andeye.com/sharedtree/61816f8d3e206329c6c6ebed (from https://wcd.andeye.com/cop26live)
+07:35:30	Error: 	"Unknown error" (522) at link https://interactive.andeye.com/respond/61099db59a86841439a48c58 (from https://wcd.andeye.com/survey)
+07:35:30	Error: 	"<none>" (522) at link https://interactive.andeye.com/sharedtree/618dd858e5853136a5ae9216?branding=wcd (from https://wcd.andeye.com/call-to-action-translated)
+07:35:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link videoask-api-wsgi.prod.svc.cluster.local/oembed?url=https%3A//video.andeye.com/fad2jv7zb&format=json (from https://video.andeye.com/fad2jv7zb?fullscreen)
+07:35:35	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link videoask-api-wsgi.prod.svc.cluster.local/oembed?url=https%3A//video.andeye.com/fad2jv7zb&format=json (from https://video.andeye.com/fad2jv7zb?fullscreen)
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 40 seconds : 138 links scanned, 107 files written (6675046 bytes overall) [6216741 bytes received at 11955 bytes/sec], 955447 bytes transferred using HTTP compression in 50 files, ratio 27%, 5.8 requests per connection
+(23 errors, 8 warnings, 0 messages)
