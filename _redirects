@@ -1,0 +1,17 @@
+# Redirect the main homepage
+/   /wcd.andeye.com/waterclimatediscussion.html   302
+
+# Redirects for clean URLs
+/waterclimatediscussion   /wcd.andeye.com/waterclimatediscussion.html   302
+/residualchlorine         /wcd.andeye.com/residualchlorine.html         302
+/wcd2022                  /wcd.andeye.com/wcd2022.html                  302
+/markdown-merge           /wcd.andeye.com/markdown-merge.html           302
+/wcd2024                  /wcd.andeye.com/wcd2024.html                  302
+/wcd2021                  /wcd.andeye.com/wcd2021.html                  302
+/mwht-platinum-sponsor    /wcd.andeye.com/mwht-platinum-sponsor.html    302
+/actionpledges            /wcd.andeye.com/actionpledges.html            302
+/call-to-action-drafting  /wcd.andeye.com/call-to-action-drafting.html  302
+/videosubmissions         /wcd.andeye.com/videosubmissions.html         302
+/wcd3-holding             /wcd.andeye.com/wcd3-holding.html             302
+/action-pledges           /wcd.andeye.com/action-pledges.html           302
+/call-to-action           /wcd.andeye.com/call-to-action.html           302
