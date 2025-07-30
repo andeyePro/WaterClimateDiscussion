@@ -1,0 +1,57 @@
+<script>
+document.cookie = "linkedindone=1; expires=Thu, 1 Jan 2032 01:00:00 UTC; path=/"; //This sets the cookie for the user.
+opener.openAndeyeChat(); //This tells the previous page that you're all set, and automatically opens the chat "magically"
+window.close(); //This closes the newly formed pop-up window
+</script>
+<center>You have signed in successfully. You may now close this tab and participate in the event.</center><script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+			function setPageViewCookie(cname, cvalue) {
+				var d = new Date();
+				d.setTime(d.getTime() + 1800000);
+				var expires = "expires="+ d.toUTCString();
+				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+			}
+			function getPageViewCookie(cname) {
+				var name = cname + "=";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(';');
+				for(var i = 0; i <ca.length; i++) {
+				  var c = ca[i];
+				  while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				  }
+				  if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				  }
+				}
+				return "";
+			}
+
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open("GET.html", "/logpageview?rurl=" + window.location.href, true);
+			xmlHttp.send(null);
+		});
+</script>
+			<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+var xhttp = new XMLHttpRequest();
+var ts = 0;
+function logEventView() {
+	var domain = window.location.host;
+	var path = window.location.pathname;
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		   ts = xhttp.responseText;
+		   if (ts < 1) {
+			   clearInterval(logEventViewSetInterval);
+		   }
+		}
+	};
+	xhttp.open("GET.html", "/logeventview?domain=" + domain + "&path=" + path + "&ts=" + ts, true);
+	xhttp.send();
+}
+
+var logEventViewSetInterval = setInterval(function(){ logEventView(); }, 300000);
+logEventView();
+});
+</script>

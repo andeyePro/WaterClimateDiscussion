@@ -1,0 +1,25 @@
+HTTrack3.49-2 launched on Wed, 30 Jul 2025 04:37:06 at https://wcd.andeye.com/waterclimatediscussion
+(winhttrack https://wcd.andeye.com/waterclimatediscussion -O "./WaterClimateDiscussion" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+04:37:54	Error: 	"Not Found" (404) at link https://wcd.andeye.com/2044/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:37:54	Error: 	"Not Found" (404) at link https://wcd.andeye.com/2024/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:37:54	Error: 	"Not Found" (404) at link https://wcd.andeye.com/wcd2022/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:00	Error: 	"Not Found" (404) at link https://wcd.andeye.com/WaterClimateDiscussion.html (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:00	Error: 	"Not Found" (404) at link https://wcd.andeye.com/WCD2022/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/call-to-action/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26finance/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26transport/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26energy/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26nature/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cop26adaptation/report.pdf (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/GET (from https://wcd.andeye.com/waterclimatediscussion)
+04:38:10	Error: 	"Not Found" (404) at link https://wcd.andeye.com/images/logo.svg (from https://wcd.andeye.com/css/main.css?mid=559)
+04:38:22	Error: 	"Not Found" (404) at link https://wcd.andeye.com/cdn-cgi/l/email-protection (from https://wcd.andeye.com/actionpledges)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 16 seconds : 41 links scanned, 26 files written (360431 bytes overall) [174518 bytes received at 2296 bytes/sec], 373032 bytes transferred using HTTP compression in 36 files, ratio 29%, 25.3 requests per connection
+(14 errors, 0 warnings, 0 messages)
